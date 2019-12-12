@@ -41,6 +41,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
 			<exclusions>
+				<!-- Remove Ribbon and use Spring Cloud LoadBalancer instead -->
 				<exclusion>
 					<groupId>org.springframework.cloud</groupId>
 					<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>

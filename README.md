@@ -13,7 +13,7 @@ Netflix OSSを使わないSpring Cloudによるマイクロサービスのサン
 | パターン | ライブラリ |
 |--------|-----------|
 | Service Discovery | Spring Cloud Consul |
-| Client-Side load Balancing | Spring Cloud LoadBalancer |
+| Client-Side Load Balancing | Spring Cloud LoadBalancer |
 | Circuit Breaker | Resilience4j |
 
 # DockerによるConsul起動

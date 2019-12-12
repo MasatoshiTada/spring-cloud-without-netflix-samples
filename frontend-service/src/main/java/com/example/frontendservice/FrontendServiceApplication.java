@@ -5,8 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -14,9 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class FrontendServiceApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(FrontendServiceApplication.class, args);
-		LoadBalancerClient loadBalancerClient = context.getBean(LoadBalancerClient.class);
-		System.out.println(loadBalancerClient.getClass().getName());
+		SpringApplication.run(FrontendServiceApplication.class, args);
 	}
 
 	@Bean
